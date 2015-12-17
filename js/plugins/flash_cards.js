@@ -104,7 +104,7 @@ $(document).ready(function(){
     });
 
     $('#add-more-button').click(function(){
-      $('#deck').hide()
+      $('#deck, #add-more-button').hide()
       renderQAList()
       $('#add-more-view').addClass('animated slideInUp animate-speed-fast').show()
       return false
@@ -112,8 +112,9 @@ $(document).ready(function(){
 
     $('#add-more-save-button').click(function(){
       $statev1.set(QAS)
-      $('#deck').show()
+      $('#deck, #add-more-button').show()
       $('#add-more-view').removeClass('animated slideInUp animate-speed-fast').hide()
+
       renderDeck()
     })
 
