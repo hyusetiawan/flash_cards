@@ -1,5 +1,9 @@
 # Flash Cards
-Simple, animated, and imageless flash cards using HTML/CSS/jQuery.
+Simple, animated, and imageless flash cards using HTML/CSS/jQuery. Forked, to add unopico $state capability so the flash cards can be shared.
+
+## Run Locally
+1. install the gem dependencies in the Gemfile
+2. run `foreman start` at the root folder and go to http://localhost:3000
 
 ## Features
  

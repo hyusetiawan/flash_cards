@@ -14,6 +14,8 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
   <link href="http://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" rel="stylesheet" type="text/css">
+
   <script src="js/vendor/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
@@ -21,39 +23,28 @@
 
   <h1><a href="https://github.com/curtisblackwell/flash_cards">Flash Cards</a> <small>by <a href="https://github.com/curtisblackwell">curtisblackwell</a></small></h1>
 
-  <ul id="deck">
-    <li class="card">
-      <div class="side_one">
-        <p>Hello</p>
-      </div>
-      <div class="side_two">
-        <p>안녕하세요</p>
-      </div>
-    </li>
-
-    <li class="card">
-      <div class="side_one">
-        <p>How many licks does it take to get to the center of a Tootsie Pop?</p>
-      </div>
-      <div class="side_two">
-        <p>The world may never know.</p>
-      </div>
-    </li>
-
-    <li class="card">
-      <div class="side_one">
-        <p>Have you been an un-American?</p>
-      </div>
-      <div class="side_two">
-        <p>Ooh-ooh-hoo-ooh!</p>
-      </div>
-    </li>
-  </ul>
+  <ul id="deck"></ul>
 
   <div id="nav_deck">
     <span class="icon" id="prev" data-icon="<"><span class="visuallyhidden">Previous</span></span>
     <span class="icon" id="flipper" data-icon="/"><span class="visuallyhidden">Flip</span></span>
     <span class="icon" id="next" data-icon=">"><span class="visuallyhidden">Next</span></span>
+  </div>
+
+
+  <button id="add-more-button">Add Question Answers</button>
+  <div id="add-more-view">
+    <ol id="add-more-list">
+    </ol>
+    <hr />
+    <form id="add-more-form">
+      <input type="text" name="q" placeholder="1+1 = ?" />
+      <textarea name="a" placeholder="2, obviously"></textarea>
+      <div class="control">
+        <button>ADD</button>
+      </div>
+    </form>
+    <button id="add-more-save-button">SAVE</button>
   </div>
 
   <div id="keyboard_shortcuts">
@@ -83,8 +74,9 @@
   <div class="icon" id="keyboard_shortcuts_toggle" data-icon="k"><span class="visuallyhidden">Keyboard Shortcuts</span></div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-
-  <script src="js/flash_cards.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://unopi.co/static/unopico.js"></script>
+  <script src="js/plugins/jquery.cycle.js"></script>
+  <script src="js/plugins/flash_cards.js"></script>
 </body>
 </html>
