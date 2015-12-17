@@ -68,7 +68,7 @@ $line_top_loc:      $line_top_loc_temp;
   padding: 0;
   position: relative;
   text-align: center;
-  width: $card_width;
+  width: 100%;
 }
 
 .card {
@@ -80,7 +80,7 @@ $line_top_loc:      $line_top_loc_temp;
   height: $card_height;
   line-height: $card_font_size * 2;
   position: relative;
-  width: $card_width;
+  width: 100%;
   &:first-child { display: block; }
 }
 
@@ -94,10 +94,14 @@ $line_top_loc:      $line_top_loc_temp;
   height: inherit;
   position: absolute;
   width: inherit;
+  display: table;
 }
 
 @if $drop_shadow == true {
-  .current .side_one, .current.flip .side_two { @include box-shadow($drop_shadow_offset_x $drop_shadow_offset_y $drop_shadow_blur $drop_shadow_color); }
+  .current .side_one, .current.flip .side_two {
+
+    @include box-shadow($drop_shadow_offset_x $drop_shadow_offset_y $drop_shadow_blur $drop_shadow_color);
+  }
   .current.flip .side_one { @include box-shadow(none); }
 }
 
@@ -127,7 +131,7 @@ $line_top_loc:      $line_top_loc_temp;
   display: table-cell;
   height: $card_height;
   vertical-align: middle;
-  width: $card_width;
+  width: 100%;
 }
 
 /* NAV */

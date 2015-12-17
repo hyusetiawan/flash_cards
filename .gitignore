@@ -45,7 +45,8 @@ dwsync.xml
 intermediate
 publish
 .idea
-
+*.iml
+*.lock
 # build script local files
 build/buildinfo.properties
 build/config/buildinfo.properties

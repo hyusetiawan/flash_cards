@@ -11,7 +11,7 @@ body {
   font: $font_size_default sans-serif;
   margin: 0 auto;
   text-align: center;
-  width: $card_width;
+  max-width: $card_width;
 }
 
 h1 { font-size: $font_size_default * 2; }
